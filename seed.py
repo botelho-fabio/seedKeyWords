@@ -30,10 +30,10 @@ ingles_amostrado = [
 
 print(ingles_amostrado)
 
-with open('./portugues.csv', 'r') as csv_file:
-    csv_reader = reader(csv_file)
+with open('./portugues.csv', 'r') as csv_file_p:
+    csv_reader_p = reader(csv_file_p)
     # Passing the cav_reader object to list() to get a list of lists
-    dicionario_portugues = list(csv_reader)
+    dicionario_portugues = list(csv_reader_p)
 
 i0 = random.randint(0, len(dicionario_portugues) - 1)
 i1 = random.randint(0, len(dicionario_portugues) - 1)
